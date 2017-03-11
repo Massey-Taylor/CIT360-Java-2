@@ -8,7 +8,7 @@ public class MainMVC {
         View view = new View();
         Model model = new Model();
 
-        Controller controller = new Controller(view, model);
+        Controller myController = new Controller(view, model);
     }
 }
 

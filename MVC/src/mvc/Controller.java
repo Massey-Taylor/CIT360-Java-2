@@ -4,12 +4,12 @@ public class Controller {
 
     public Controller(View view, Model model) {
 
-        model.isPal(view.getUserString());
+        model.isPal(view.getInputUser());
 
-        if(model.isPalindrome()){
-            view.isPalindrome();
+        if(model.isPal()){
+            view.isPal();
         }else{
-            view.notPalindrome();
+            view.notPal();
         }
 
     }

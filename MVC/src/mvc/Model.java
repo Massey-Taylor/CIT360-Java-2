@@ -2,18 +2,18 @@ package mvc;
 
 public class Model {
 
-    boolean isPalindrome;
+    boolean isPal;
 
     public Model(){
 
     }
 
     public void isPal(String pal){
-        isPalindrome = pal.equals(new StringBuilder(pal).reverse().toString());
+        isPal = pal.equals(new StringBuilder(pal).reverse().toString());
     }
 
-    public boolean isPalindrome() {
-        return isPalindrome;
+    public boolean isPal() {
+        return isPal;
     }
 
 }

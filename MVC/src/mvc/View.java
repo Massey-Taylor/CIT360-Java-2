@@ -4,26 +4,24 @@ import java.util.Scanner;
 
 public class View {
     Scanner input = new Scanner(System.in);
-    String userString;
+    String inputUser;
 
     public View() {
-        System.out.println("**********************************");
-        System.out.println("*******Palindrome Checker*********");
-        System.out.println("Please enter in a word of your choice:");
-        userString = input.nextLine();
+        System.out.println("Enter in a word to check to see if it's a Palindrome.");
+        inputUser = input.nextLine();
     }
 
-    public String getUserString() {
-        return userString;
+    public String getInputUser() {
+        return inputUser;
     }
 
 
-    public void isPalindrome(){
-        System.out.println("Yes! This is a Palindrome.");
+    public void isPal(){
+        System.out.println("mmhmmm. You entered in a Palindrome.");
     }
 
-    public void notPalindrome(){
-        System.out.println("No! This is not a Palindrome.");
+    public void notPal(){
+        System.out.println("Nooooooope. You have not entered in a Palindrome.");
     }
 
 }
